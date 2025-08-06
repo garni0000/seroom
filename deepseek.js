@@ -3,7 +3,7 @@ const axios = require("axios");
 async function askDeepSeek(prompt, userContext = {}) {
   try {
     if (!process.env.OPENROUTER_API_KEY) {
-      console.error("❌ OPENROUTER_API_KEY manquante dans .env");
+      console.error("❌ OPENROUTER_API_KEY manquante dans .env")
       return "Configuration API manquante.";
     }
 
